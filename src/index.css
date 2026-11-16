@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Daylight Dock — cool concrete + container teal */
+  --bg: #e8edf2;
+  --bg-elevated: #f4f7fa;
+  --panel: #f7f9fb;
+  --panel-mid: #eef2f6;
+  --panel-deep: #ffffff;
+  --ink: #1a2433;
+  --ink-soft: #3d4d63;
+  --muted: #6b7c90;
+  --line: #d5dee8;
+  --line-strong: #b8c6d6;
+  --accent: #0d7a86;
+  --accent-hot: #0a96a5;
+  --accent-dim: #5a9aa3;
+  --accent-wash: rgba(13, 122, 134, 0.1);
+  --ok: #2f9a6a;
+  --warn: #c24b3a;
+  --warn-wash: rgba(194, 75, 58, 0.1);
+  --focus-ring: #0d7a86;
+  --shadow: 0 8px 24px rgba(26, 36, 51, 0.08);
+  --radius: 6px;
+  --font-display: 'Barlow Condensed', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-body: 'IBM Plex Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
